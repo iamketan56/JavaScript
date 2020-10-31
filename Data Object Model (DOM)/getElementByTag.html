@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Basic Dom</title>
+</head>
+<body>
+    <h1 id="intro">I am ketan sharma</h1>
+    <h2>An Engineering Student</h2> 
+    <p id="self">
+        <span>I am learning Dom from basic</span>
+       <em>Hello</em>
+       <b>B tag</b>
+        </p>   
+    <p id="learn">It will help me in web development</p>
+    <script>
+        //for p tag
+       var result = document.getElementsByTagName("p")
+        document.write(result)
+        console.log(result)
+        //for all tags
+        var r = document.getElementsByTagName("*")
+        document.write(r)
+        console.log(r)
+        //for tag inside the body
+        var result = document.body.getElementsByTagName("p")
+        document.write(result)
+        console.log(result)
+        //specific tag
+        var result = document.getElementById("self").getElementsByTagName("*")
+        document.write(result)
+        console.log(result)
+        //use length property
+        var len = document.getElementsByTagName("p").length;
+        console.log(len)
+        document.write(len + "<br>")
+        //Looping over document
+        for(let i =0 ;i<len;i++)
+        {
+            var res = document.getElementsByTagName("p")[i];
+            console.log(res)
+            document.write(res + "<br>")
+        }
+
+        
+</script>
+</body>
+</html>
