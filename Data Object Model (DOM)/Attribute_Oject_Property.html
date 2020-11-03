@@ -1,0 +1,37 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ </head>
+ <body>
+     <h1 id="myid" class="myclass">
+         we are learning JS
+         <!---This is comment-->
+     </h1>
+     <p id="myid1">
+         i am paragraph
+     </p>
+     <script>
+         //Attribute Properties name ,value
+         var result = document.getElementById("myid");
+   document.write(result.attributes[0].nodeName + " =");//document.write(result.attributes[0].Name + " =");
+        document.write( result.attributes[0].nodeValue);
+
+        document.write(result.attributes[1].nodeName + " =");
+        document.write( result.attributes[1].nodeValue);//document.write(result.attributes[0].Value + " =");
+
+//legnth of attribute
+        document.write(result.attributes.length)
+
+        //By loop
+        for(let i =0 ;i<result.attributes.length;i++)
+        {
+            document.write(result.attributes[i].nodeName + " = ");
+            document.write(result.attributes[i].nodeValue + " <br>")
+        }
+     
+     </script>
+ </body>
+ </html>
