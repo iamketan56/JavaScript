@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myid">
+        
+        i am learning js
+
+        <!----This is comment-->
+    </h1>
+    <p id="myid1">
+        i am a paragraph
+    </p>
+    <script>
+        document.write("........Document.....");
+        document.write(document.nodeName + "<br>");
+        document.write(document.nodeValue+ "<br>");
+        document.write(document.nodeType + "<br>");  
+    
+    document.write("<b><b> -----Element----");
+    var ele = document.getElementById("myid")
+    document.write(ele.nodeName + "<br>");
+        document.write(eleS.nodeValue+ "<br>");
+        document.write(ele.nodeType + "<br>");  
+    
+        document.write("<b><b> -----Text----<br><br>");
+    var txt = document.getElementById("myid")
+    document.write(txt.firstChild.nodeName + "<br>");
+        document.write(txt.firstChild.nodeValue+ "<br>");
+        document.write(txt.firstChild.nodeType + "<br>");  
+    
+    
+        document.write("<b><b> -----Comment----<br><br>");
+    var txt = document.getElementById("myid")
+    document.write(txt.firstChild.nextSibling.nodeName + "<br>");
+        document.write(txt.firstChild.nextSibling.nodeValue+ "<br>");
+        document.write(txt.firstChild.nextSibling.nodeType + "<br>");  
+     
+    </script>
+
+</body>
+</html>
