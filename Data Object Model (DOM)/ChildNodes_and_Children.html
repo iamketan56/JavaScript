@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body id="mybody">
+    <h1>
+        we are learning JS
+        <!---This is comment-->
+    </h1>
+    <p id="myid1">
+        i am paragraph
+    </p>
+    <p id="myid2">
+        i am paragraph 2nd
+    </p>
+    
+    <script>
+       
+        var result = document.getElementById("mybody")
+      document.write(result.childNodes)
+        console.log(result.childNodes)
+       document.write(result.children)
+        console.log(result.children)
+
+//acess every chlid by loop
+        for(let i=0;i<result.childNodes.length;i++)
+        {
+            console.log(result.childNodes[i])
+        }
+         
+     var result = document.getElementById("myid1")
+        document.write(result.childNodes)
+        document.write(result.children)
+    
+     </script>
+    </body>
+ </html>
