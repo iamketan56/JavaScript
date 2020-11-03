@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html id="myid">
+<head>
+    <title>Document</title>
+</head>
+<body id="mybody">
+    <h1>
+        we are learning JS
+        <!---This is comment-->
+    </h1>
+    <p id="myid1">
+        i am paragraph
+    </p>
+    <script>
+        var result = document.getElementById("myid")
+        document.write(result.parentElement +"<br>")//it will give null
+        document.write(result.parentNode +"<br>")// it will give object
+       
+        var result = document.getElementById("mybody")
+        document.write(result.parentElement +"<br>")//it will give html in console
+        document.write(result.parentNode +"<br>")// it will give object
+         
+     
+     </script>
+    </body>
+ </html>
