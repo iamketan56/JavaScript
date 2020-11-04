@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div id="myid">
+    <h1 id="myh1">
+        we are learning JS
+        <!---This is comment-->
+    </h1>
+
+    </div>
+    <section id="mysec">
+
+    </section>
+   
+    <script>
+       //var myid = document.getElementById("myid")
+       //console.log(myid)
+// append exsiting one node
+     var mysec = document.getElementById("mysec");
+     var myh1 = document.getElementById("myh1")
+     mysec.appendChild(myh1);
+        //console.log(myid)
+       // console.log(mysec)
+
+    // appned new element node
+    var nHNode = document.createElement("h2");
+    var myid = document.getElementById("myid")
+    myid.appendChild(nHNode);
+    //console.log(myid);
+    
+    //append new text node
+    var nTNode = document.createTextNode("Ketan This Side");
+    var mysec = document.getElementById("mysec")
+    mysec.appendChild(nTNode);
+   // console.log(mysec);
+
+    //append new comment node
+    var nCNode = document.createComment("New Comment");
+    var mysec = document.getElementById("mysec")
+    mysec.appendChild(nCNode);
+    console.log(mysec);
+
+
+    //append togther
+    var nENode = document.createElement("h2");
+    var myid = document.getElementById("myid")
+    myid.appendChild(nENode);
+    var nTNode = document.createTextNode("Ketan This Side");
+  nENode.appendChild(nTNode);
+  var nCNode = document.createComment("New Comment");
+  nENode.appendChild(nCNode);
+  console.log(myid)
+
+    
+
+     </script>
+    </body>
+ </html>
