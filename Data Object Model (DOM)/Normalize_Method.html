@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div id="mybody">
+    <h1>
+        we are learning JS
+        <!---This is comment-->
+    </h1>
+    
+</div>
+    <script>
+       var targernode = document.getElementById("mybody")
+       targernode.appendChild(document.createTextNode("HI"))
+       targernode.appendChild(document.createTextNode("My Name"))
+       targernode.appendChild(document.createTextNode("IS Ketan"))
+        console.log(targernode.childNodes)
+
+        targernode.normalize()
+        console.log(targernode.childNodes)
+     </script>
+    </body>
+ </html>
