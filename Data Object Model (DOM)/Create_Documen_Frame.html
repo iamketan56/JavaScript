@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div id="mybody">
+    <h1>
+        we are learning JS
+        <!---This is comment-->
+    </h1>
+    
+</div>
+    <script>
+       
+    var nDf = document.createDocumentFragment();
+  
+    var hnode = document.createElement("h3");
+
+
+    var pnode = document.createElement("p");
+
+    hnode.textContent = "H3 tag"
+    pnode.textContent = "P tag"
+
+    var mybody = document.getElementById("mybody")
+
+    nDf.appendChild(hnode);
+    nDf.appendChild(pnode);
+
+    mybody.appendChild(nDf);
+
+    console.log(mybody)
+     </script>
+    </body>
+ </html>
