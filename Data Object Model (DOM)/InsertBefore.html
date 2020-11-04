@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div id="mybody">
+    <ul id="record">
+        <li id="jq">Jquery</li>
+        <li id="ang">Angular JS</li>
+        <li id="mysq">Mysql</li>
+    </ul>
+</div>
+    <script>
+var parentNode = document.getElementById("record")
+      var newNode = document.createElement("li")
+      newNode.textContent="React JS"
+      var ref = document.getElementById("mysq")
+
+      parentNode.insertBefore(newNode,ref);
+     console.log(parentNode);
+
+
+     //move one node to anthor position
+     var parentNode = document.getElementById("record")
+     var refNode = document.getElementById("jq")
+    var moveNode = document.getElementById("ang")
+    parentNode.insertBefore(moveNode,refNode);
+    console.log(parentNode);
+     </script>
+    </body>
+ </html>
