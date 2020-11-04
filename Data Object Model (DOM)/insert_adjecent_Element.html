@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div id="mybody">
+   
+     <h1 id="myid">
+        we are learning JS
+        <!---This is comment-->
+    </h1>
+    
+</div>
+    <script>
+       var par = document.getElementById("mybody")
+       //console.log(par)
+       var h1 = document.getElementById("myid")
+       var h2 = document.createElement("h2")   
+       var para = document.createElement("p")
+       var sp = document.createElement("span")
+       var em = document.createElement("em")
+
+       h1.insertAdjacentElement("beforebegin",h2);
+       h1.insertAdjacentElement("afterend",para);
+       h1.insertAdjacentElement("afterbegin",sp);
+       h1.insertAdjacentElement("beforeend",em);
+
+       console.log(par)
+     </script>
+    </body>
+ </html>
