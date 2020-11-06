@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Document</title>
+</head>
+<body>
+    <p id="myp" style="background-color: darkcyan;color: black;"
+    >
+My para
+</p>
+<script>
+    var p = document.getElementById("myp");
+    //console.log(p)
+    var cssobject = p.style;
+    //console.log(cssobject.cssText)
+    cssobject.cssText = "font-size:70px;color:blue"
+        //console.log(p)
+       /* console.log(cssobject.length)
+        console.log(cssobject.item(1))//cs[1]
+        console.log(cssobject.getPropertyValue('color'))*/
+        cssobject.removeProperty('color')
+        cssobject.setProperty('font-size','90px','important')
+        
+        console.log(cssobject.getPropertyPriority('font-size'))
+        console.log(p)
+
+</script>
+</body>
+</html>
