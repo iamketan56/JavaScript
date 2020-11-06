@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Document</title>
+     <style>
+         .myclass1
+         {
+             background-color: brown;
+             text-align: center;
+             color: cornsilk;
+             font-size: 50px;
+         }
+         .myclass2
+         {
+             background-color:lightgray;
+             text-align:right;
+             color:black;
+             font-size: 60px;
+         }
+     </style>
+</head>
+<body>
+    <p id="myp" class="myclass1 myclass3" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;""
+    >
+My paragraph 
+</p>
+<script>
+    var p = document.getElementById("myp");
+    var elementclass = p.classList;
+ //   console.log(elementclass); //will return dom loken list
+   // console.log(elementclass[1])
+ //  console.log(elementclass.length)
+   //console.log(elementclass.value)
+   //console.log(elementclass.item(0))
+   //elementclass.add('myclass1')
+  //elementclass.remove('myclass4','myclass5')
+  //elementclass.replace("myclass1","myclass8")
+  //console.log(elementclass.contains("myclass2"))
+  //elementclass.toggle("myclass1") dissappear
+  //elementclass.toggle("myclass1")  appear
+   console.log(elementclass)
+</script>
+</body>
+</html>
