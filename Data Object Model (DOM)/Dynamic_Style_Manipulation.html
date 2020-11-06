@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Document</title>
+     <style>
+         .myclass1
+         {
+             background-color: brown;
+             text-align: center;
+             color: cornsilk;
+             font-size: 50px;
+         }
+         .myclass2
+         {
+             background-color:lightgray;
+             text-align:right;
+             color:black;
+             font-size: 60px;
+         }
+     </style>
+</head>
+<body>
+    <p id="myp" class="myclass1" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;""
+    >
+My paragraph 
+</p>
+<script>
+    var p = document.getElementById("myp");
+    p.className = "myclass2"
+    //p.className = "myclass1"
+</script>
+</body>
+</html>
