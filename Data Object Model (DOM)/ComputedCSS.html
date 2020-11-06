@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Document</title>
+     <style>
+         .myclass1
+         {
+             text-transform: uppercase;
+             color: black;
+             background-color: lightblue;
+             font-size: 60px;
+         }
+     </style>
+</head>
+<body>
+    <p id="myp" class="myclass1" style="background-color: darkcyan;color: black;"
+    >
+My paragraph
+</p>
+<script>
+  var p =document.getElementById("myp")
+    
+    var wgc = window.getComputedStyle(p);
+    console.log(wgc.fontSize) // we can read
+    wgc.fontSize = "80px" // we cant write in window style
+    
+</script>
+</body>
+</html>
