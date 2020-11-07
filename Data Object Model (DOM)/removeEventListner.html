@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <h1>Event Handling</h1>
+    <!--<button onclick="alert('Button clicked');"">Click me</button>-->
+    <button id="mybtn">Click me</button>
+
+</body>
+<script>
+    var btn = document.getElementById("mybtn")
+   /* btn.addEventListener("click",function(){alert("Button clicked");});
+    btn.addEventListener("mouseover",function(){alert("Button clicked");});
+*/
+    //Benefit
+    function disp1()
+    {
+        alert("Button 1 clicked")
+    }
+    
+    function disp2()
+    {
+        alert("Button 2 clicked")
+    }
+    btn.addEventListener("click",disp1)
+    btn.addEventListener("click",disp2)
+
+    btn.removeEventListener("click",disp2) // disp2 is removed
+</script>
+</html>
