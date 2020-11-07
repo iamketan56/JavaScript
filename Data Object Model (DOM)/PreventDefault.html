@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Prevent Default</h1>
+    <div id="mydiv">
+        <a href="https://github.com/iamketan56" id="mylink">Go to my github</a>
+    </div>
+    <script>
+        function stoplink(e)
+        {
+            e.preventDefault();
+        }
+        var l =document.getElementById("mylink")
+        l.addEventListener("click",stoplink,false)
+    </script>
+</body>
+</html>
