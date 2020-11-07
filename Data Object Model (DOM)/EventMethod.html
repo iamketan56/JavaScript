@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one
+        {
+        width: 300px;
+        height: 300px;
+        background-color: lightblue;
+        }
+        #two
+        {
+            width: 200px;
+        height: 200px;
+        background-color: greenyellow;
+
+        }
+        #three
+        {
+            width: 100px;
+        height: 100px;
+        background-color: yellow;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Event Method</h1>
+    <div id="one">1
+        <div id="two">2
+            <div id="three">3
+
+            </div>
+        </div>
+    </div>
+    <script>
+        function div1(e)
+        {
+            this.style.backgroundColor = 'red';
+        }
+        
+        function div2(e)
+        {
+            this.style.backgroundColor = 'blue';
+            e.stopPropagation();
+        }
+        
+        function div3(e)
+        {
+            this.style.backgroundColor = 'black';
+
+            e.stopImmediatePropagation(); // stop here 
+
+        }
+        
+        function div4(e)
+        {
+            
+            this.style.width = '250px';
+        }
+        var divone = document.getElementById("one")
+        var divtwo = document.getElementById("two")
+        var divthree = document.getElementById("three")
+
+        divone.addEventListener("click",div1,false)
+        divtwo.addEventListener("click",div2,false)
+        divthree.addEventListener("click",div3,false)
+        divthree.addEventListener("click",div4,false)
+        
+    </script>
+</body>
+
+</html>
