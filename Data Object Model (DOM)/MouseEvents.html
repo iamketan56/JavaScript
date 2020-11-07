@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #one
+        {
+        width: 300px;
+        height: 300px;
+        background-color: lightblue;
+        }
+        #two
+        {
+            width: 200px;
+        height: 200px;
+        background-color: greenyellow;
+
+        }
+        #three
+        {
+            width: 100px;
+        height: 100px;
+        background-color: yellow;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Event Method</h1>
+    <div id="one">1
+        <div id="two">2
+            <div id="three">3
+
+            </div>
+        </div>
+    </div>
+    <script>
+        function div1(e)
+        {
+            console.log(e.type)
+        }
+
+        
+        var divone = document.getElementById("one")
+        var divtwo = document.getElementById("two")
+
+       divtwo.addEventListener("mousedown",div1,false)
+        divtwo.addEventListener("mouseup",div1,false)
+        divtwo.addEventListener("click",div1,false)
+        divtwo.addEventListener("dblclick",div1,false)
+        divtwo.addEventListener("mouseenter",div1,false)
+        divtwo.addEventListener("mouseleave",div1,false)
+        divtwo.addEventListener("mousemove",div1,false)
+        divtwo.addEventListener("contextmenu",div1,false)
+    </script>
+</body>
+
+</html>
