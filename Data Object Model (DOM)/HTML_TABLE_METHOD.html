@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" id="myab">
+        
+    <!-- <thead>
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>COURSE</th>
+        </tr>
+    </thead> -->
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Ketan</td>
+            <td>JS</td>
+        </tr>
+        
+        <tr>
+            <td>2</td>
+            <td>Rahul</td>
+            <td>DBMS</td>
+        </tr>
+        
+        <tr>
+            <td>3</td>
+            <td>Vijay</td>
+            <td>DS</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <td>00</td>
+        <td>Footer</td>
+        <td>End</td>
+    </tfoot>
+    </table>
+    <script>
+        var table = document.getElementById("myab");
+       //create caption method
+       var tc = table.createCaption();
+        tc.innerHTML = "My new caption";
+        console.log(table.caption)
+        //delete caption
+        table.deleteCaption();
+
+        //create tHead
+      var thead = table.createTHead();
+        thead.innerHTML ="<tr><th>ID</th><th>NAME</th><th>COURSE</th></tr>"
+        console.log(thead)
+        //delete tHead
+        table.deleteTHead();
+
+        //insert row
+        // var row = table.insertRow(-1);// -1 means append at last
+         var row = table.insertRow(1);// 
+        row.insertCell(0).textContent = "New data";
+         //delete row
+         table.deleteRow(1)
+        
+
+    </script>
+</body>
+</html>
