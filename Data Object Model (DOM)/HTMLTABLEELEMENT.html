@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" id="myab">
+        <caption>My table caption</caption>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>COURSE</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Ketan</td>
+            <td>JS</td>
+        </tr>
+        
+        <tr>
+            <td>2</td>
+            <td>Rahul</td>
+            <td>DBMS</td>
+        </tr>
+        
+        <tr>
+            <td>3</td>
+            <td>Vijay</td>
+            <td>DS</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <td>00</td>
+        <td>Footer</td>
+        <td>End</td>
+    </tfoot>
+    </table>
+    <script>
+        var table = document.getElementById("myab");
+        console.log(table.caption.innerHTML);
+        console.log(table.tHead.innerHTML);
+        console.log(table.tBodies[0].innerHTML)
+        
+
+    </script>
+</body>
+</html>
