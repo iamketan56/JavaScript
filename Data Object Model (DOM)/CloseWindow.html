@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+ <button id="close">close</button>
+    <script>
+    var newwindow = window.open("","_blank","height=400,width=500");
+   // newwindow.document.write('New window')      
+  function exit()
+  {
+      newwindow.document.close()
+      newwindow.close()
+  }
+  document.getElementById('close').addEventListener("click",exit,false)
+
+
+    </script>
+</body>
+</html>
