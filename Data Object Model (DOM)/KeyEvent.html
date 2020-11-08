@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Name</label>
+    <input type="text" id="uname">
+    <script>
+        var txt = document.getElementById("uname")
+         function ke(e)
+         {
+             console.log(e.type +' '+e.keyCode + ' '+String.fromCharCode(e.keyCode));
+         }
+        
+        txt.addEventListener("keydown",ke,false)
+        txt.addEventListener("keyup",ke,false)
+        txt.addEventListener("keypress",ke,false)
+
+        
+    </script>
+</body>
+</html>
