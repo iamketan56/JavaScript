@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+ <button type="button" id="openbtn">Open</button>
+ <button type="button" id="focusbtn">Focus</button>
+ <button type="button" id="blurbtn">Blur</button>
+    <script>
+    var newwindow;
+    function openwin()
+    {
+        newwindow = window.open("","_blank","width=200 height=400")
+    }
+    function focuswin()
+    {
+        newwindow.focus();
+    }
+    function blurwin()
+    {
+        newwindow.blur();
+    }
+  document.getElementById('openbtn').addEventListener("click",openwin)
+  ocument.getElementById('focusbtn').addEventListener("click",focuswin)
+  ocument.getElementById('blurbtn').addEventListener("click",blurwin)
+    </script>
+</body>
+</html>
