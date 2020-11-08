@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+ <button type="button" id="openbtn">Open Window</button>
+ <button type="button" id="resizebtn">Resize window</button>
+ <button type="button" id="resizetobtn">Resize to window</button>
+ 
+<script>
+    var newwindow;
+    function openwin()
+    {
+        newwindow = window.open("","newWindow","width=400 height=100");
+        newwindow.document.write("New Window")
+
+    }
+    function resizeWin()
+{
+    newwindow.resizeBy(250,200)
+    newwindow.focus();
+}
+function resizetoWin()
+{
+    newwindow.resizeTo(250,200)
+    newwindow.focus();
+}
+
+document.getElementById('openbtn').addEventListener("click",openwin);
+document.getElementById('resizebtn').addEventListener("click",resizeWin);
+document.getElementById('resizetobtn').addEventListener("click",resizetoWin);
+
+</script>
+</body>
+</html>
