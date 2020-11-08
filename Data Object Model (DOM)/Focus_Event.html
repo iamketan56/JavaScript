@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Name</label>
+    <input type="text" id="uname">
+    <script>
+        var txt = document.getElementById("uname")
+        function fe(e)
+        {
+            txt.style.backgroundColor = 'orange'
+        }
+        function bl(e)
+        {
+            txt.style.backgroundColor = 'white'
+        }
+        function fi(e)
+        {
+            txt.style.backgroundColor = 'green'
+        }
+        
+        function fo(e)
+        {
+            txt.style.backgroundColor = 'black'
+        }
+        
+        txt.addEventListener("focus",fe)
+        txt.addEventListener("blur",bl) 
+        txt.addEventListener("focusin",fi)
+        txt.addEventListener("focusout",fo)
+
+        
+    </script>
+</body>
+</html>
