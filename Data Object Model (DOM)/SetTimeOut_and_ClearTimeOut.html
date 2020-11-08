@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Document</title>
+
+</head>
+<body>
+    <p id="mypara">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quis, vitae repudiandae vero mollitia blanditiis earum totam similique eveniet, laborum labore nulla a numquam reprehenderit voluptatum. Soluta consequatur hic asperiores itaque earum. Voluptate autem nemo provident quidem et velit nulla inventore labore, deserunt nisi quaerat exercitationem consequuntur, eum esse eius? Dignissimos magnam est facere, libero, nostrum laboriosam officia, dolore in praesentium corporis aut minima et sit amet perferendis tempore porro? Consequuntur tenetur minima ut quod. Eius dolorum asperiores nemo, aspernatur illum ipsum voluptatibus magni ab et quos tempora deleniti aut dolores blanditiis sunt reiciendis. Veniam, voluptas! Aperiam laboriosam recusandae impedit.
+
+    </p>
+    <button id="mybtn">Clear Time</button>
+    <script>
+        // function changeclr()
+        // {
+        //     document.getElementById('mypara').style = 'color:red;text-align:center';
+        // }
+        // setTimeout(changeclr , 5000);
+      var timeoutID =  setTimeout(() =>{     
+        document.getElementById('mypara').style = 'color:red;text-align:center';} ,2000)
+
+function clrtime()
+{
+    clearTimeout(timeoutID)
+}
+document.getElementById('mybtn').addEventListener("click",clrtime)
+    </script>
+</body>
+</html>
