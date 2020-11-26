@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="myform" id="mf1">
+        Username : <input type="text" name="username_field" >
+        <br><br>
+        Password : <input type="password" name="user_pass"><br><br>
+        <input type="submit" name = "btn" value="Submit">
+        <br><br>
+    </form>
+    <hr>
+    
+    <form action="" name="yform" id="yf1">
+        Username : <input type="text" name="y_username_field" ><br><br>
+        Password : <input type="password" name="y_user_pass"><br><br>
+        <input type="submit" name = "Y_btn" value="Submit"><br><br>
+    </form>
+
+    <script>
+        // // //acess by index
+        // var mform = document.forms[1];
+        // console.log(mform);
+
+        // // //name attribute
+        // var form = document.forms['myform']
+        // console.log(form);
+
+        // //direct by name
+        // var form = document.myform;
+        // console.log(form);
+
+        //by id
+        var form = document.getElementById('yf1');
+        console.log(form);
+    </script>
+</body>
+</html>
