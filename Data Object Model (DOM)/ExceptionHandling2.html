@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getarea(a,b)
+        {
+            if(isNaN(a) || isNaN(b))
+            {
+                throw "Not a number<br>"; // exception to browser
+            }
+            else
+            {
+                document.write("Area is" + a*b + "<br>");
+            }
+        }
+        try
+        {
+            getarea(10,10);
+            getarea('A',10);
+        }
+        catch(e) // it will catch the expection
+        {
+            document.write(e);
+
+        }
+        document.write("Somthing is Wrong");
+       
+
+    </script>
+</body>
+</html>
