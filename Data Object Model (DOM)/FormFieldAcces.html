@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="myform" id="mf1">
+        Username : <input type="text"  name="username_field" id="username_id" >
+        <br><br>
+        Password : <input type="password" name="user_pass" id="pass_id"><br><br>
+        <input type="submit" name = "btn" value="Submit">
+        <br><br>
+    </form>
+    <hr>
+    <script>
+    //    var usname = document.getElementById('username_id');
+    //    console.log(usname);
+    //    console.log(usname.name);
+    //    var uspass = document.getElementById('pass_id');
+
+    //second way
+        var usname = document.myform.elements['username_field'];
+       // console.log(usname);
+        console.log(usname.value);
+
+
+    </script>
+</body>
+</html>
