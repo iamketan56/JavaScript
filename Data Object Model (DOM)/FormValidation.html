@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="myform">
+        Username : <input type="text"  name="username_field">
+        <small id="small_txt"></small>
+        <br><br>
+        <input type="submit" name="sbtn" value="Submit">
+    </form>
+    <hr>
+    <script>
+    function validatedata()
+    {
+        var ptrn = /^([^0-9\W]*)$/;
+        if(ptrn.test(document.myform.username_field.value))
+        {
+            document.getElementById("small_txt").textContent = "Valid";
+            document.getElementById("small_txt").style.color = 'green';
+        }
+        else
+        {
+
+            document.getElementById("small_txt").textContent = "InValid";
+            document.getElementById("small_txt").style.color = 'red';
+        }
+    }
+    document.myform.username_field.addEventListener("blur",validatedata)
+    </script>
+</body>
+</html>
