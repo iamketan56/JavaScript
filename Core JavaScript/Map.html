@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [
+            {price:1000,product:"TV"},
+            {price:2000,product:"DESKTOP"},
+            {price:3000,product:"MONITER"},
+            {price:4000,product:"LCD"},
+            {price:5000,product:"LED"},
+        ];
+       var pricearr = arr.map(function(value)
+        {
+            return value.price;
+        })
+        var productarr = arr.map(function(value)
+        {
+            return value.product;
+        })
+        console.log(pricearr);
+        </script>
+</body>
+</html>
