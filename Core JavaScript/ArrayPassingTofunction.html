@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var arr= [10,20,30]
+    function show([value1,value2,value3])
+    {
+        console.log(value1);
+        console.log(value2);
+        console.log(value3);
+    }
+
+    var arr1 = [10,20,30,40,50,60,70];
+    function show1([value1,value2, ...rest])
+    {
+        console.log(value1);
+        console.log(value2);
+        console.log(rest);
+    }
+    show1(arr1);
+     </script>
+</body>
+</html>
