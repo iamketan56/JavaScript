@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var student = {studentname:"Ketan",sectionname:"IT",groupno:2};
+       var{studentname,sectionname,groupno} = student;
+       console.log(studentname);
+       console.log(sectionname);
+       console.log(groupno);
+
+       //another way
+       var{studentname:sname,sectionname:section,groupno:group} = student;
+       console.log(sname);
+       console.log(section);
+       console.log(group);
+
+       function show(a)
+       {
+           console.log(a.studentname);
+           console.log(a.sectionname);
+           console.log(a.groupno);
+       }
+       show(student);
+   
+       function showreturn(a)
+       {
+        return a;
+       }
+       x=showreturn(student);
+       console.log(x.studentname);
+
+
+   
+     </script>
+</body>
+</html>
