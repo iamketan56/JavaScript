@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function show(a)
+        {
+            console.log("I am show function" + a);
+        
+        }
+        function cb(callback) // geeky(a,callback)
+        {
+            var a=101;
+            callback(a);
+        }
+        cb(show); // geeky(101,show)
+        console.log("End of program");
+    </script>
+</body>
+</html>
